@@ -1,5 +1,3 @@
-
-
 .App {
   display: flex;
   flex-direction: column;
@@ -60,6 +58,7 @@
   flex: 0.5;
   padding-bottom: 2em;
 }
+
 .App-body-details-search  form {
   margin: auto;
   
@@ -132,8 +131,6 @@
   margin-bottom: 1em;
 }
 
-
-
 .App-body-details-list  .list-container .list-places-item {
   flex-basis: 100%;
   height: 100%;
@@ -151,7 +148,6 @@
  border-radius: 3px;
 }
 
-/*.App-body-details-list  .list-container*/
 .list-places-item .list-places-item-details {
   display: flex;
   justify-content: space-between;
