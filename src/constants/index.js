@@ -6,7 +6,7 @@ export const HEADER = {
 }
 
 export const VANCOUVER = { lat: 49.2799838, lng: -123.129204 }
-export const CDN = 'http://res.cloudinary.com/dx70bhobp/image/upload/'
+export const CDN = process.env.CDN
 export const EMOJIS = {
   LOVE: 'v1499050356/love-emoji_b8fm3i.png',
   LIKE: 'v1499050356/like-emoji_cmf5je.png',
