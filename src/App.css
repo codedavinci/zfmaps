@@ -1,0 +1,115 @@
+
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.App-logo {
+  margin: auto;
+  animation: App-logo-spin infinite 20s linear;
+  height: 70%;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to bottom, #accbee 0%, #e7f0fd 100%);
+  width: 100%;
+  height: 150px;
+  padding: 20px;
+  border-bottom: 1px solid lightgray;
+}
+
+.App-header div {
+  margin: auto;
+}
+.App-header span {
+  margin: 0;
+  padding: 0;
+  font-family: 'Product Sans', 'sans-serif';  
+  font-weight: 900;
+  font-size: 300%;
+  letter-spacing: 1px;
+}
+.App-intro {
+  font-size: large;
+}
+
+.App-body {
+  display: flex;
+}
+
+.App-body-map {
+  flex: 1;
+  height: calc(100vh - 175px);
+}
+
+.App-body-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: calc(100vh- 175px);
+}
+
+.App-body-details-search {
+  display: flex;
+  border: 2px solid pink;
+  width: 100%;
+  flex: 1;
+}
+.App-body-details-search  form {
+  margin: auto;
+  
+}
+
+.App-body-details-search  input {
+  border-radius: 0.5em;
+  height: 1.9em;
+  width: 12em;
+  border: 1px solid lightgray;
+  font-family: 'Product Sans', 'sans-serif';
+  font-size: 26px;
+  padding-left: 15px;
+  color: gray;
+  margin: 25px 10px 10px 0;
+}
+
+.App-body-details-search  button {
+  height: 3.4 em;
+  width: 8em;
+  border-radius: 1em;
+  border: 1px solid lightgray;
+  background-color: #ff6368;
+  color: #FFF;
+  font-family: 'Product Sans', 'sans-serif';
+  font-weight: 700;
+  font-size: 110%;
+  letter-spacing: 1px;
+  padding-top: 9px;
+}
+
+.App-body-details-search  button:focus, input:focus {
+  outline: none;
+}
+
+.App-body-details-search  button:hover {
+  border: 1px solid #ff6368;
+  background-color: #FFF;
+  color: black; 
+}
+
+
+.App-body-details-list {
+  width: 100%;
+   border: 2px solid blue;
+  margin: auto;
+  flex: 4;
+}
+
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
