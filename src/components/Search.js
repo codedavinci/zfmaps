@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 
 const Search = ({ onSubmitSearch }) => {
   let Input
@@ -17,5 +18,10 @@ const Search = ({ onSubmitSearch }) => {
     </div>
   )
 }
+
+Search.propType = {
+  onSubmitSearch: PropTypes.func.isRequired
+}
+
 
 export default Search

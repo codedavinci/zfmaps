@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import { VANCOUVER } from '../constants'
 import { getRating } from '../lib'
 const google = window.google
@@ -54,9 +55,7 @@ class Maps extends Component {
   deleteMarkers = () => this.setMapOnAll(null)
   setMapOnAll = (map) => this.markers.forEach(marker => marker.setMap(map))
 
-
   createMarker = (place) => {
-    
     const marker = new google.maps.Marker({
       map: this.map,
       icon: getRating(place.rating),
@@ -79,8 +78,13 @@ class Maps extends Component {
   render() {
     return (
       <div className="App-body-map" ref='map' id="map" />
-    );
+    )
   }
+}
+
+Maps.propTypes = {
+  param: PropTypes.string.isRequired,
+  handlePlaces: PropTypes.func.isRequired
 }
 
 export default Maps;

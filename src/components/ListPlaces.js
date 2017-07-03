@@ -1,8 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 import ListPlacesItem from './ListPlacesItem'
 
-
-const ListPlaces = ({ places, handleHovering }) => (
+const ListPlaces = ({ places }) => (
   <div className="list-container">
     <ul>
       {places.map(place => <ListPlacesItem
@@ -12,5 +12,12 @@ const ListPlaces = ({ places, handleHovering }) => (
     </ul>
   </div>
 );
+
+ListPlaces.propTypes = {
+  places: PropTypes.arrayOf(
+    PropTypes.arrayOf(PropTypes.object.isRequired).isRequired,
+    PropTypes.arrayOf(PropTypes.object.isRequired).isRequired
+  ).isRequired
+}
 
 export default ListPlaces

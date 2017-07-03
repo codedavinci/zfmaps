@@ -1,12 +1,9 @@
 import React, { Component } from 'react'
 import Maps from './Maps'
-import DetailsContainer from './DetailsContainer'
+import { DetailsContainer } from '../components'
 
 class Body extends Component {
-  state = {
-    param: '',
-    places: []
-  }
+  state = { param: '', places: [] }
 
   render() {
     const { param, places } = this.state

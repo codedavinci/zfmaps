@@ -14,13 +14,3 @@ export const getRating = (rate) => {
       return CDN + EMOJIS.POOP
   }
 }
-
-// export const getContentString = (place) => {
-//   return (
-//     <div>
-//       <img src='place.photo' alt=""/>
-//       <div>
-//       </div>
-//     </div>
-//   )
-// }
