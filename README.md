@@ -4,7 +4,7 @@ ZFMAPS
 May your dream come true by sharing them
 --------------------------
 
-### Welcome to DREAMLAND
+### Welcome to ZFMAPS
 
 
 * Make sure you have node.js and git installed on your machine.
