@@ -5,7 +5,7 @@ import ListContainer from './ListContainer'
 const DetailsContainer = (props) => (
   <div className="App-body-details">
     <Search {...props}/>
-    <ListContainer />
+    <ListContainer places={props.places} />
   </div>
 );
 

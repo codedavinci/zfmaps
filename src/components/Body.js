@@ -4,25 +4,20 @@ import DetailsContainer from './DetailsContainer'
 
 class Body extends Component {
   state = {
-   params: ''
+    param: '',
+    places: []
   }
-
-  // updateMap = (res) => {
-  //   this.setState({ center: res[0] })
-  // }
-
-  // handleBoundsChanged = () => (this.setState({ bounds: this._map.getBounds(), center: this._map.getCenter() }))
-  onSubmitSearch = (param) => {
-   this.setState({ param })
-  }
-
 
   render() {
-    const { param} = this.state
+    const { param, places } = this.state
     return (
       <div className="App-body">
-        <Maps param={param} />
-        <DetailsContainer onSubmitSearch={this.onSubmitSearch} />
+        <Maps
+          param={param}
+          handlePlaces={(places) => this.setState({ places })} />
+        <DetailsContainer
+          places={places}
+          onSubmitSearch={(param) => this.setState({ param })} />
       </div>
     );
   }

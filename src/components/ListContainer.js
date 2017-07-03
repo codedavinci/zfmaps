@@ -1,11 +1,10 @@
 import React from 'react';
+import ListPlaces from './ListPlaces'
 
-const ListContainer = () => {
+const ListContainer = (props) => {
   return (
     <div className="App-body-details-list">
-      <div className="container">
-        
-      </div>
+      <ListPlaces {...props} />
     </div>
   );
 };
