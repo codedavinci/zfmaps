@@ -17,5 +17,8 @@ PlacesRating.propTypes = {
   rating: PropTypes.number.isRequired
 }
 
+PlacesRating.defaultProps = {
+  rating: 0
+}
 
 export default PlacesRating;
